@@ -27,10 +27,7 @@ function makeGrid(x) {
 }
 
 function clear() {
-    let cell = document.querySelectorAll('.box');
-    cell.forEach(element => {
-        element.style.backgroundColor = "";
-    });
+    container.textContent = "";
 }
 
 const btn = document.querySelector('#newGrid');
