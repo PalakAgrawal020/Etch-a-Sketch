@@ -1,6 +1,14 @@
 body {
     height : 100vh;
     display:flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+
+#newGrid {
+    padding: 75px 100px 75px 100px;
+    margin : 200px;
+    font-size: 65px; 
 }
