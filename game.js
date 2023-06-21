@@ -3,6 +3,7 @@ const container = document.querySelector('#container');
 
 makeGrid(16);
 
+
 function makeGrid(x) {
     for(let i=0; i<x; i++){
         let myRow = document.createElement('tr');
@@ -18,7 +19,8 @@ function makeGrid(x) {
             myCol.classList.add('box');
 
             let cell = myCol.addEventListener('mouseover', function(e) {
-                e.target.style.background = 'black';
+                let colorid = document.querySelector('#color-id');
+                e.target.style.background = colorid.value;
             });
 
             row.appendChild(myCol);

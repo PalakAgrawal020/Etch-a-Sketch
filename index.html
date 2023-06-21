@@ -9,11 +9,27 @@
     <script src="game.js" defer></script>
 </head>
 <body>
-    <div id="clearbtn">
-        <button class="btn" id="btn-clear">Clear All</button>
-        <button class="btn" id="newGrid">New Grid</button>
+    <div id="super-container">
+
+        <div id="name">Etch-a-Sketch</div>
+
+        <div id="super-container2">
+            <div id="clearbtn">
+                <button class="btn" id="btn-clear">Clear All</button>
+                <button class="btn" id="newGrid">New Grid</button>
+                <label for="color" id="label">Choose a color:</label> 
+                    <select name="color-name" id="color-id"> 
+                        <option value="black">Black</option> 
+                        <option value="pink">Pink</option> 
+                        <option value="red">Red</option> 
+                        <option value="yellow">Yellow</option> 
+                        <option value="green">Green</option>
+                        <option value="blue">Blue</option>
+                    </select>
+            </div>
+            
+            <div id="container"></div>
+        </div>
     </div>
-    
-    <div id="container"></div>
 </body>
 </html>
