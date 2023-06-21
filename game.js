@@ -35,8 +35,13 @@ function clear() {
 const btn = document.querySelector('#newGrid');
 btn.addEventListener('click', function (e) {
     let x = prompt("Enter the number of squares to be added per side");
-    clear();
-    makeGrid(x);
+    if(x>=0 & x<=64) {
+        clear();
+        makeGrid(x);
+    }
+    else {
+        alert("Please choose a number in the range 1 - 64");
+    }
 });
 
 
