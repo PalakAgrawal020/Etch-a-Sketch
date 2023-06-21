@@ -37,3 +37,11 @@ btn.addEventListener('click', function (e) {
     makeGrid(x);
 });
 
+
+const clearAll = document.querySelector('#btn-clear');
+clearAll.addEventListener('click', function() {
+    const box = document.querySelectorAll('.box');
+    box.forEach(element => {
+        element.style.backgroundColor = "";
+    });
+})
